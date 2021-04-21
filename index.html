@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Tablice JS</title>
+  <meta name="author" content="Krystian Wybranowski, krystian.wybranowski@gmail.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c812269549.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+      <li style="float:right"><a target="_blank" href="https://wybran.ninja/"><i class="fas fa-user"></i> Krystian Wybranowski 3Tc</a></li>
+    </ul>
+  </nav>
+  <main id="page">
+    <div class="content">
+      <h1>Koszyk 🛒</h1>
+      <select name="sort" id="sort" onchange="selectChange()">
+        <option selected disabled>Sortuj według</option>
+        <option value="1">Nazwa A-Z</option>
+        <option value="2">Nazwa Z-A</option>
+        <option value="3">Cena rosnąco</option>
+        <option value="4">Cena malejąco</option>
+      </select>
+      <table id="koszyk">
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Cena</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
+    </div>
+    <footer>
+      <p>&copy; 2021 <a href="http://zseis.zgora.pl" target="_blank">CKZiU Nr 2 "Elektronik" w Zielonej Górze.</a></p>
+    </footer>
+  </main>
+</body>
+  <script src="js/app.js"></script>
+</html>
